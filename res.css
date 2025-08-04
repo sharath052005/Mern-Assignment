@@ -1,0 +1,56 @@
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.divider {
+    width: 85%;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 550;
+    color: white;
+    background-color: rgb(175, 175, 175);
+    padding: 5px 10px;
+}
+
+.institution {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.date {
+    font-style: italic;
+    font-weight: 400;
+    float: right;
+}
+
+.skill {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skill .value {
+    font-size: 16px;
+    font-weight: 400;
+}
