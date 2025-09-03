@@ -1,66 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Elon Musk - Wikipedia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-form {
+      text-align: center;
+    }
+
+    .signup-form input {
+      display: block;
+      margin: 10px auto;
+      padding: 8px;
+      width: 200px;
+    }
+
+    .signup-form button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <div class="signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="email" id="email" placeholder="Email ID">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="showPassword()">Create Account</button>
+  </div>
 
-    <header>
-        <h1>Elon Musk</h1>
-        <p>From Wikipedia, the free encyclopedia</p>
-    </header>
-
-    <div class="main-content">
-
-        <div class="sidebar">
-            <h3>Contents</h3>
-            <ul>
-                <li><a href="#early">1 Early Life</a></li>
-                <li><a href="#career">2 Career</a></li>
-                <li><a href="#companies">3 Companies</a></li>
-                <li><a href="#personal">4 Personal Life</a></li>
-                <li><a href="#references">5 References</a></li>
-            </ul>
-        </div>
-
-        <div class="content-area">
-            
-            <div class="infobox">
-                <h2>Elon Musk</h2>
-                <img src="elon.webp" alt="Elon Musk" class="infobox-img">
-                <p><strong>Born:</strong> June 28, 1971</p>
-                <p><strong>Nationality:</strong> South African, Canadian, American</p>
-                <p><strong>Occupation:</strong> Entrepreneur, Investor, Engineer</p>
-            </div>
-
-            <h2 id="early">Early Life</h2>
-            <p>Elon Reeve Musk was born on June 28, 1971, in Pretoria, South Africa. He developed an interest in computing and technology at an early age.</p>
-
-            <h2 id="career">Career</h2>
-            <p>Musk moved to the U.S. to attend the University of Pennsylvania. He co-founded Zip2, which was sold to Compaq. He then founded X.com, which became PayPal after a merger and was sold to eBay.</p>
-
-            <h2 id="companies">Companies</h2>
-            <p>Musk is known for founding SpaceX, Tesla Inc., The Boring Company, Neuralink, and co-founding OpenAI. His ventures span electric vehicles, space exploration, neurotechnology, and infrastructure.</p>
-
-            <h2 id="personal">Personal Life</h2>
-            <p>Elon Musk has been married multiple times and has several children. He is known for his ambitious vision of the future, including colonizing Mars.</p>
-
-            <h2 id="references">References</h2>
-            <ol>
-                <li><a href="#">Official Biography</a></li>
-                <li><a href="#">Tesla Website</a></li>
-                <li><a href="#">SpaceX Website</a></li>
-            </ol>
-
-        </div>
-
-    </div>
-
-    <footer>
-        <p>Retrieved from "https://en.wikipedia.org/wiki/Elon_Musk"</p>
-    </footer>
-
+  <script>
+    function showPassword() {
+      let password = document.getElementById("password").value;
+      alert("Your password is: " + password);
+    }
+  </script>
 </body>
 </html>
